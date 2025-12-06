@@ -3,6 +3,7 @@ import express, {NextFunction,Request,Response} from 'express'
 import connectDB from './config/db';
 import globalErrorHandler from './middlewares/globalErrorHandler';
 import userRouter from './user/userRouter';
+import bookRouter from './book/bookRouter';
 
 const app=express();
 connectDB()
@@ -16,6 +17,7 @@ app.get('/',(req,res,next)=>{
 
 
 app.use("/api/users",userRouter);
+app.use('/api/books',bookRouter);
 
 
 app.use(globalErrorHandler);
