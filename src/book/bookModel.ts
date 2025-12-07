@@ -1,7 +1,8 @@
 import mongoose from 'mongoose'
-import { Book } from './bookTypes'
 
-const bookSchema= new mongoose.Schema<Book>({
+
+
+const bookSchema= new mongoose.Schema({
     title: {
         type: String,
         required: true
@@ -27,4 +28,4 @@ const bookSchema= new mongoose.Schema<Book>({
 {timestamps: true}
 )
 
-export default mongoose.model<Book>('book',bookSchema)
+export default mongoose.model('book',bookSchema)
