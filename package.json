@@ -28,8 +28,10 @@
     "typescript-eslint": "^8.48.0"
   },
   "dependencies": {
+    "@types/cors": "^2.8.19",
     "bcrypt": "^6.0.0",
     "cloudinary": "^2.8.0",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "http-errors": "^2.0.1",
